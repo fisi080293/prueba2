@@ -193,7 +193,7 @@ $numReg = pg_num_rows($resultado);
 						echo '<td>'.'<a href="#a'.$fila['nu_id'].'" title="Editar curso" role="button" class="btn btn-app" data-toggle="modal"><i class="fa fa-edit"></i></a>'.'</td>';
 						echo
 						'<div id="a'.$fila['nu_id'].'" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-                            <form name="form2" method="post" action="index.php">
+                            <form name="form2" method="get" action="index.php">
                             	<input type="hidden" name="nu_id" value="'.$fila['nu_id'].'">
                                 <div class="modal-header">
                                     <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
